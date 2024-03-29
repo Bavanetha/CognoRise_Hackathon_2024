@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stils</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stils.css">
+    <script src="https://kit.fontawesome.com/877fdb1861.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</head>
+<body class="lato-bold-italic ">
+  <!--splashsreen-->
+  <div id="splash-screen">
+    <div class="splash-content">
+        <h1>Welcome To</h1>
+        <div><img src="D:\html files\cognorise infotech hackathon\Full stack website\logo1.png"></div>
+    </div>
+    </div>
+
+
+   <!-- Navigation Bar -->
+   <header>
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="D:\html files\cognorise infotech hackathon\Full stack website\logo1.png"></div>
+            <ul id="nav">
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li><a href="stils.html" >Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <div class="mobile">
+              <div><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+              <div id="mobile"><i id="bar" class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!--Hero-->
+    <section class="hero py-6 hero-1" style="margin-top: 100px;">
+        <div class="container">
+          <!-- Hero Content-->
+          <div class="hero-content">
+            <h1 class="hero-heading" style="margin-top:50px;">Checkout</h1>
+            <div><p class="lead text-muted">Are you a returning customer? <a href="#">Login</a>.</p></div>
+          </div>
+        </div>
+    </section>
+
+    <!--checkout details-->
+    <div class="container pb-6 pb-6-1">
+        <div class="row">
+          <div class="col-lg-7 pe-xl-6">
+            <form action="checkout-confirmed.html">
+              <h5 class="text-primary mb-5">Invoice address </h5>
+              <div class="row"> 
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="fullname_invoice">Full Name</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="fullname_invoice" id="fullname_invoice" fdprocessedid="ygz2ub" >
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="emailaddress_invoice">Email Address</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="emailaddress_invoice" id="emailaddress_invoice" fdprocessedid="imketr">
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="street_invoice">Street</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="street_invoice" id="street_invoice" fdprocessedid="u65yi1">
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="city_invoice">City</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="city_invoice" id="city_invoice" fdprocessedid="aks8v">
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="zip_invoice">ZIP</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="zip_invoice" id="zip_invoice" fdprocessedid="4zd91d">
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="state_invoice">State</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="state_invoice" id="state_invoice" fdprocessedid="zrdn8r">
+                </div>
+                <div class="mb-3 col-md-6 mb-4">
+                  <label class="form-label" for="phonenumber_invoice">Phone Number</label>
+                  <input class="form-control1 form-control-underlined ps-0" type="text" name="phonenumber_invoice" id="phonenumber_invoice" fdprocessedid="320mr">
+                </div>
+                <div class="mb-3 col-12 mt-3">
+                  <div class="form-check" style="text-align: left;">
+                    <input class="form-check-input collapsed" id="show-shipping-address" type="checkbox" name="show-shipping-address" data-bs-toggle="collapse" data-bs-target="#shippingAddress" aria-expanded="false">
+                    <label class="form-check-label align-middle" for="show-shipping-address" >Use a different shipping address</label>
+                  </div>
+                </div>
+                <!-- /Invoice Address-->
+              </div>
+              <!-- Shippping Address-->
+              <div class="collapse" id="shippingAddress">
+                <h5 class="text-primary my-4">Shipping address </h5>
+                <div class="row">
+                  <div class="mb-3 col-md-6 mb-4">
+                    <label class="form-label" for="street_shipping">Street</label>
+                    <input class="form-control1 form-control-underlined ps-0" type="text" name="street_shipping" id="street_shipping">
+                  </div>
+                  <div class="mb-3 col-md-6 mb-4">
+                    <label class="form-label" for="city_shipping">City</label>
+                    <input class="form-control1 form-control-underlined ps-0" type="text" name="city_shipping" id="city_shipping">
+                  </div>
+                  <div class="mb-3 col-md-6 mb-4">
+                    <label class="form-label" for="zip_shipping">ZIP</label>
+                    <input class="form-control1 form-control-underlined ps-0" type="text" name="zip_shipping" id="zip_shipping">
+                  </div>
+                  <div class="mb-3 col-md-6 mb-4">
+                    <label class="form-label" for="state_shipping">State</label>
+                    <input class="form-control1 form-control-underlined ps-0" type="text" name="state_shipping" id="state_shipping">
+                  </div>
+                  <div class="mb-3 col-md-6 mb-4">
+                    <label class="form-label" for="phonenumber_shipping">Phone Number</label>
+                    <input class="form-control1 form-control-underlined ps-0" type="text" name="phonenumber_shipping" id="phonenumber_shipping">
+                  </div>
+                </div>
+              </div>
+              <!-- /Shipping Address-->
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <h5 class="text-primary mb-5">Order Summary</h5>
+            <table class=" tablec border-bottom border-dark mb-5">
+              <tbody><tr class="text-sm">
+                <th class="py-4 fw-normal text-muted">Lymio <span>x 1</span></th>
+                <td class="py-4 text-end text-muted">₹499.00</td>
+              </tr>
+              <tr class="text-sm">
+                <th class="py-4 fw-normal text-muted">Clovia <span>x 1</span></th>
+                <td class="py-4 text-end text-muted">₹489.00</td>
+              </tr>
+              <tr class="text-sm">
+                <th class="py-4 fw-normal text-muted">Niren <span>x 1</span></th>
+                <td class="py-4 text-end text-muted">₹450.00</td>
+              </tr>
+              <tr>
+                <th class="py-4 text-uppercase fw-normal text-sm align-bottom">Order Subtotal </th>
+                <td class="py-4 text-end text-muted">₹1439.00</td>
+              </tr>
+              <tr>
+                <th class="py-5 border-dark" colspan="2"> 
+                  <div class="mb-4">Shipping and handling</div>
+                  <div class="mb-3 mb-1 ms-4">
+                    <div class="form-check">
+                      <input class="form-check-input" id="shipping0" type="radio" name="shipping" checked="">
+                      <label class="form-check-label text-sm fw-normal" for="shipping0">DHL ₹10</label>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-1 ms-4">
+                    <div class="form-check">
+                      <input class="form-check-input" id="shipping1" type="radio" name="shipping">
+                      <label class="form-check-label text-sm fw-normal" for="shipping1">Branch pickup ₹10 </label>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th class="py-4 text-uppercase fw-normal border-dark align-bottom">Total</th>
+                <td class="py-4 text-end h3 fw-normal border-dark">₹1449.00</td>
+              </tr>
+              <tr>
+                <th class="pt-5 pb-4 border-dark" colspan="2">            
+                  <div class="form-check">
+                    <input class="form-check-input" id="payment0" type="radio" name="payment" checked="">
+                    <label class="form-check-label text-sm fw-normal" for="payment0" data-bs-toggle="collapse" data-bs-target="#paymentinfo_0">Pay on delivery</label>
+                  </div>
+                  <div class="collapse show" id="paymentinfo_0" data-parent="table.table">
+                    <div class="pt-4">
+                      <p class="text-muted text-sm">Pay on delivey is good choice but when you Pay using below options to get extra coupons & offers</p>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th class="py-4" colspan="2">            
+                  <div class="form-check">
+                    <input class="form-check-input" id="payment1" type="radio" name="payment">
+                    <label class="form-check-label text-sm fw-normal" for="payment1" data-bs-toggle="collapse" data-bs-target="#paymentinfo_1">Card payment</label>
+                  </div>
+                  <div class="collapse" id="paymentinfo_1" data-parent="table.table">
+                    <div class="pt-4">
+                      <p class="text-muted text-sm">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th class="pt-4 pb-5" colspan="2">            
+                  <div class="form-check">
+                    <input class="form-check-input" id="payment2" type="radio" name="payment">
+                    <label class="form-check-label text-sm fw-normal" for="payment2" data-bs-toggle="collapse" data-bs-target="#paymentinfo_2">PayPal</label>
+                  </div>
+                  <div class="collapse" id="paymentinfo_2" data-parent="table.table">
+                    <div class="pt-4">
+                      <p class="text-muted text-sm">His room, a proper human room although a little too small, lay peacefully between its four familiar </p>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </tbody></table>
+            <p class="text-muted text-sm">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+            <p class="text-muted text-sm mb-5">I have read and agree to the website <a href="#">terms and conditions</a>. * </p>
+            <div class="d-grid"><a class="btn btn-dark btn-lg mb-5" href="confirm.html">Place order</a>
+              <!-- this should be <button type="submit"> on your site-->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer bg-dark pt-5">
+        <div class="container">
+          <div class="row pb-2">
+            <div class="col-md-4 col-sm-6">
+              <div class="widget widget-links widget-light pb-2 mb-4">
+                <h3 class="widget-title text-light">Shop departments</h3>
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Sneakers &amp; Athletic</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Athletic Apparel</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Sandals</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Jeans</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Shirts &amp; Tops</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Shorts</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">T-Shirts</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Swimwear</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Clogs &amp; Mules</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Bags &amp; Wallets</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Accessories</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Sunglasses &amp; Eyewear</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Watches</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="widget widget-links widget-light pb-2 mb-4">
+                <h3 class="widget-title text-light">Account &amp; shipping info</h3>
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Your account</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Shipping rates &amp; policies</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Refunds &amp; replacements</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Order tracking</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Delivery info</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Taxes &amp; fees</a></li>
+                </ul>
+              </div>
+              <div class="widget widget-links widget-light pb-2 mb-4">
+                <h3 class="widget-title text-light">About us</h3>
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">About company</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Our team</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">Careers</a></li>
+                  <li class="widget-list-item"><a class="widget-list-link" href="#">News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget pb-2 mb-4">
+                <h3 class="widget-title text-light pb-1">Stay informed</h3>
+                <form class="subscription-form validate">
+                  <div class="input-group flex-nowrap">
+                    <input class=" rounded-start" type="email" name="EMAIL" placeholder="Your email" required="" fdprocessedid="thzhdi" style="outline: transparent; width:200%;">
+                    <button class="btn btn-primary" type="submit" name="subscribe" fdprocessedid="0z89v2h">Subscribe*</button>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+                  </div>
+                  <div class="form-text text-light opacity-50">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</div>
+                  <div class="subscription-status"></div>
+                </form>
+              </div>
+              <div class="widget pb-2 mb-4">
+                <h3 class="widget-title text-light pb-1">Download our app</h3>
+                <div class="d-flex flex-wrap">
+                  <div class="me-2 mb-2"><img src="D:\html files\cognorise infotech hackathon\Full stack website\posters\applestore.png"></div>
+                  <div class="mb-2"><img src="D:\html files\cognorise infotech hackathon\Full stack website\posters\playstore.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 bg-darker">
+          <div class="container">
+            <div class="row pb-3">
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="d-flex"><i class="fa-solid fa-truck-fast" style="font-size: 2.25rem;"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-base text-light mb-1">Fast and free delivery</h6>
+                    <p class="mb-0 fs-ms text-light opacity-50">Free delivery for all orders over $200</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="d-flex"><i class="fa-solid fa-sack-dollar" style="font-size: 2.25rem;"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-base text-light mb-1">Money back guarantee</h6>
+                    <p class="mb-0 fs-ms text-light opacity-50">We return money within 30 days</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="d-flex"><i class="fa-solid fa-headset" style="font-size: 2.25rem;"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-base text-light mb-1">24/7 customer support</h6>
+                    <p class="mb-0 fs-ms text-light opacity-50">Friendly 24/7 customer support</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="d-flex"><i class="fa-regular fa-credit-card" style="font-size: 2.25rem;"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-base text-light mb-1">Secure online payment</h6>
+                    <p class="mb-0 fs-ms text-light opacity-50">We possess SSL / Secure сertificate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-light mb-5">
+            <div class="row pb-2">
+              <div class="col-md-6 text-center text-md-start mb-4">
+                <div class="text-nowrap mb-4"><a class="d-inline-block align-middle mt-n1 me-3" href="#"><img class="d-block" src="D:\html files\cognorise infotech hackathon\Full stack website\logo1.png" width="117" alt="Cartzilla"></a>
+                  
+                </div>
+                <div class="widget widget-links widget-light">
+                  <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+                    <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Outlets</a></li>
+                    <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Affiliates</a></li>
+                    <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Support</a></li>
+                    <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Privacy</a></li>
+                    <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Terms of use</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 text-center text-md-end mb-4">
+                <div class="mb-3">
+                    <a class="btn-social bs-light bs-twitter ms-2 mb-2" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="btn-social bs-light bs-facebook ms-2 mb-2" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="btn-social bs-light bs-pinterest ms-2 mb-2" href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                    <a class="btn-social bs-light bs-youtube ms-2 mb-2" href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+                <img class="d-inline-block" src="D:\html files\cognorise infotech hackathon\Full stack website\posters\payment_methods.png" width="267" alt="Payment methods">
+              </div>
+            </div>
+            <div class="pb-4 fs-xs text-light opacity-50 text-center text-md-start">© All rights reserved</div>
+          </div>
+        </div>
+    </footer>
+    
+    <script src="stils.js"></script>
+   
+</body>
+</html>
